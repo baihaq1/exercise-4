@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>FinalProject - Baihaqi</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Javascript</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="#" onclick="" id="profil" class="profil btn modal-trigger" data-target="profil-modal">Profile</a>
+        </li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Profile</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section">
+      <div class="container">
+        <div class="carousel">
+           <a class="carousel-item" href="page/angular.html"><img src="assets/img/angularjs.jpg"></a>
+           <a class="carousel-item" href="page/meteor.html"><img src="assets/img/meteorjs.jpg"></a>
+           <a class="carousel-item" href="page/node.html"><img src="assets/img/nodejs.jpg"></a>
+           <a class="carousel-item" href="page/react-native.html"><img src="assets/img/react-nativejs.jpg"></a>
+           <a class="carousel-item" href="page/vue.html"><img src="assets/img/vuejs.jpg"></a>
+         </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/img/bg.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="container">
+          <p>
+            JavaScript is a multi-paradigm language. It supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles.  JavaScript was initially used only for client side. However, these days JavaScript is used as a server-side programming language as well. To summarize in just one simple sentence – JavaScript is the language of the web.
+          </p>
+          <h3>
+            What is JavaScript framework and why to use one?
+
+          </h3>
+          <p>
+            A software framework is an abstraction in which software providing generic functionality can be selectively changed by additional user-written code. JavaScript framework is an application framework written in JavaScript where the programmers can manipulate the functions and use them for their convenience.
+          </p>
+          <p>
+            Frameworks are more adaptable for the designing of websites and hence, they are preferred by most of the website developers. JavaScript frameworks are a type of tool that makes working with JavaScript easier and smoother. These frameworks also make it possible for the programmer to code the application as device responsive. This responsiveness is yet another reason why the JavaScript frameworks are quite popular when it comes to the question of using a high-level machine language. Let’s have a look at the best JS Frameworks in 2018.
+          </p>
+          <p>
+            <a href="https://hackr.io/blog/10-best-javascript-frameworks-2019">Source</a>
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Profile -->
+  <div id='profil-modal' class='modal fade text-left profil-modal' tabindex='-1' role='dialog'>
+    <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <h4 class='modal-title'></h4>
+          </div>
+        <div class='modal-body with-padding'>
+            <div class="container about" id="contactabout">
+              <h6>let me introduce my self</h6>
+              <hr>
+              <div class="row">
+                <div class="col s12 m4 l4">
+                  <p>
+                    Someone who is trying to always study the world of web programming (in the future want to be able to mobile app). I am always interested in modern programming, but I know that to be able to achieve it requires a lot of effort, and that is not a problem, for my future.
+          Coffe, heavy metal music is my favorite.
+                  </p>
+                </div>
+                <div class="col s12 m4 l4">
+                  <h6>Profile</h6>
+                  <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                      <img src="assets/img/foto.jpg" width="64" height="64">
+                      <p>Name : Baihaqi</p>
+                      <p>Address : Cempaka Putih Barat XIX , Jakarta Pusat</p>
+                    </div>
+                    <div class="card-action">
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m4 l4">
+                  <h6>History Jobs</h6>
+                  <ul class="collapsible">
+                    <li class="active">
+                      <div class="collapsible-header"><i class="mdi-av-web"></i>Junior Programmer</div>
+                      <div class="collapsible-body"><p>Junior Programmer in travel companies.</p></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="mdi-editor-format-align-justify"></i>Programmer</div>
+                      <div class="collapsible-body"><p>Programmer in travel companies.</p></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 center">
+              <h3><i class="mdi-content-send brown-text"></i></h3>
+              <h4>Contact Me</h4>
+              <p class="left-align light">
+                <form id="contactform" method="POST" action="http://formspree.io/ubay62@gmail.com">
+                  <input type="text" name="name" placeholder="Name" class="validate">
+                  <input type="email" name="_replyto" placeholder="Email">
+                  <textarea name="message" placeholder="Message" rows="15" cols="80"></textarea>
+                  <input type="hidden" name="_gotcha">
+                  <button class="btn waves-effect waves-light" type="submit" name="action" id="sendMessage">Submit
+                     <i class="material-icons right">send</i>
+                  </button>
+                </form>
+              </p>
+            </div>
+          </div>
+          <div class='modal-footer'>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/materialize.js"></script>
+  <script src="assets/js/init.js"></script>
+  <script type="text/javascript">
+
+    $('.profil').click(function(){
+      $('#profil-modal').modal();
+    });
+
+    // carousel
+    $(document).ready(function(){
+      $('.carousel').carousel({
+        duration: 100,
+        dist: -70,
+        padding: 10,
+        shift: 10,
+        indicators: true
+      });
+    });
+
+  </script>
+  </body>
+</html>
